@@ -4,7 +4,7 @@ const client = new Discord.Client({
         'USER_NOTE_UPDATE', 'USER_SETTINGS_UPDATE', 'PRESENCE_UPDATE', 'VOICE_STATE_UPDATE',
         'TYPING_START', 'VOICE_SERVER_UPDATE', 'RELATIONSHIP_ADD', 'RELATIONSHIP_REMOVE',
     ],
-    messageCacheMaxSize: 20,
+    messageCacheMaxSize: 1,
     messageCacheLifetime: 1200,
     messageSweepInterval: 600
 });
