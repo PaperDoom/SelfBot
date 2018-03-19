@@ -2,8 +2,11 @@ const Discord = require("discord.js");
 const client = new Discord.Client({
     disabledEvents: ['GUILD_BAN_ADD', 'GUILD_BAN_REMOVE', 'CHANNEL_PINS_UPDATE',
         'USER_NOTE_UPDATE', 'USER_SETTINGS_UPDATE', 'PRESENCE_UPDATE', 'VOICE_STATE_UPDATE',
-        'TYPING_START', 'VOICE_SERVER_UPDATE', 'RELATIONSHIP_ADD', 'RELATIONSHIP_REMOVE'
-    ]
+        'TYPING_START', 'VOICE_SERVER_UPDATE', 'RELATIONSHIP_ADD', 'RELATIONSHIP_REMOVE',
+    ],
+    messageCacheMaxSize: 20,
+    messageCacheLifetime: 1200,
+    messageSweepInterval: 600
 });
 const fs = require("fs");
 const config = require("./config")
