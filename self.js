@@ -5,8 +5,8 @@ const client = new Discord.Client({
         'TYPING_START', 'VOICE_SERVER_UPDATE', 'RELATIONSHIP_ADD', 'RELATIONSHIP_REMOVE',
     ],
     messageCacheMaxSize: 1,
-    messageCacheLifetime: 1200,
-    messageSweepInterval: 600
+    messageCacheLifetime: 60,
+    messageSweepInterval: 120
 });
 const fs = require("fs");
 const config = require("./config")
